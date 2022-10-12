@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ShoppingComponent } from './shopping/shopping.component';
 import{RouterModule,Routes} from '@angular/router';
+import {  HttpClientModule} from '@angular/common/http';
+
 const appRoutes:Routes=[
   {
     path:"",component:ShoppingComponent
@@ -17,12 +19,14 @@ const appRoutes:Routes=[
   declarations: [
     AppComponent,
     NavbarComponent,
-    ShoppingComponent
+    ShoppingComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
