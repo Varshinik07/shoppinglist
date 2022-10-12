@@ -19,7 +19,7 @@ export class ShoppingComponent implements OnInit {
     )
    }
 
-  productList:any=[]
+  productList:any={}
 
   ngOnInit(): void {
   }
